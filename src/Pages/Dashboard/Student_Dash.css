@@ -1,0 +1,288 @@
+.student-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.profile-section h3 {
+  margin: 0;
+  color: #2d3436;
+}
+
+.profile-section p {
+  color: #636e72;
+  margin: 0.5rem 0 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar nav button {
+  padding: 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav button:hover {
+  background-color: #f1f2f6;
+  color: #2d3436;
+}
+
+.sidebar nav button.active {
+  background-color: #0984e3;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.welcome-section {
+  margin-bottom: 2rem;
+}
+
+.welcome-section h2 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+.attendance-btn {
+  padding: 1rem 2rem;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.attendance-btn:hover {
+  background-color: #0866b3;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  color: #636e72;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem;
+}
+
+.stat-card p {
+  color: #2d3436;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.progress-chart {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-exam-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.add-exam-form input,
+.add-exam-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+}
+
+.add-exam-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.exam-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.exam-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #f1f2f6;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0984e3;
+  transition: width 0.3s ease;
+}
+
+.progress-metrics {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.metric {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations {
+  margin-top: 2rem;
+}
+
+.recommendation {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation.warning {
+  border-left: 4px solid #fdcb6e;
+}
+
+.recommendation.success {
+  border-left: 4px solid #00b894;
+}
+
+.student-dash-container {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    color: #343a40;
+    font-weight: 700;
+  }
+  
+  .custom-card {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card-header {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid #ced4da;
+  }
+  
+  .custom-table {
+    margin-top: 1rem;
+  }
+  
+  .custom-table th, .custom-table td {
+    vertical-align: middle;
+  }
+  
+  button {
+    font-weight: bold;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

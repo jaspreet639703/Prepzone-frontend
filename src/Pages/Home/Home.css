@@ -1,0 +1,66 @@
+.hero {
+  background-image: url('../../assets/images/Front.png'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  position: relative; /* Positioning context for overlay */
+  color: #343a40; /* Dark text color for contrast */
+  padding: 2rem 0; /* Top and bottom padding */
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.title {
+  color: #ffffff; /* White color for title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow to the text */
+}
+
+.subtitle {
+  color: #ffffff; /* White color for subtitle */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow to the text */
+}
+
+.quote {
+  font-size: 1.5rem; /* Font size for the quote */
+  font-style: italic; /* Italic style for the quote */
+  margin: 1.5rem 0; /* Margin around the quote */
+  color: #ffffff; /* White color for the quote */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow to the text */
+}
+
+button {
+  background-color: #007bff; /* Default button color */
+  color: #ffffff; /* Text color for the button */
+  border: none; /* Remove border */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding for button */
+  font-size: 1rem; /* Font size for button */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 576px) {
+  .hero {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .quote {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  button {
+    font-size: 0.9rem; /* Reduce button font size for smaller screens */
+  }
+}
+.contact-home .contact-container {
+  max-width: 400px;
+  margin-left: 0;
+}

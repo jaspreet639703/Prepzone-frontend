@@ -1,0 +1,70 @@
+/* Contact.css */
+
+/* Reset container margin to avoid extra space */
+.container {
+    margin-top: 3px; /* Set to only 3px to maintain proximity to header */
+  }
+  
+  /* Style for the contact card */
+  .contact-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Ensure a white background for clarity */
+  }
+  
+  /* Contact details styling */
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  
+  .contact-details h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better visibility */
+  }
+  
+  .contact-details p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555; /* Gray color for contrast */
+  }
+  
+  /* Map embed section styling */
+  .map-embed {
+    margin-top: 20px;
+  }
+  
+  /* Form section heading styling */
+  .form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better visibility */
+  }
+  
+  /* Form control styling */
+  .form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Add a border for visibility */
+    padding: 10px; /* Ensure enough padding inside the input */
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+  }
+  
+  /* Change button color on hover */
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
