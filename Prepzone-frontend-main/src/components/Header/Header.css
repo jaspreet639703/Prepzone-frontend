@@ -1,0 +1,48 @@
+/* Header.css */
+.custom-navbar {
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Ensure no margin is applied */
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  color: #000 !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header {
+  background: linear-gradient(135deg, #f7f7f7 0%, #e2e2e2 100%);
+  margin: 0; /* Ensure no margin is applied */
+  padding: 0; /* Ensure no padding is applied */
+}

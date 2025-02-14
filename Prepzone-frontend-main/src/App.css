@@ -1,0 +1,27 @@
+/* App.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 3px; /* Ensure there is only 3px space above the header */
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}

@@ -1,0 +1,151 @@
+.analytics {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analytics h2 {
+  color: #2d3436;
+  margin-bottom: 1.5rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h3 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.student-progress {
+  margin-top: 2rem;
+}
+
+.progress-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progress-fill {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #0984e3, #74b9ff);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+}
+
+.status.good {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.average {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.poor {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.insights {
+  margin-top: 2rem;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.insight-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.insight-card h4 {
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.insight-card .value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0984e3;
+  margin: 0.5rem 0;
+}
+
+.insight-card .description {
+  color: #636e72;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analytics {
+    padding: 1rem;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  th, td {
+    padding: 0.75rem;
+  }
+}
